@@ -1,0 +1,204 @@
+.two_cards {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 4rem 16rem;
+}
+
+.two_cards>.tc_wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 6rem;
+    justify-content: center;
+}
+
+.tc_wrapper>#bir,
+.tc_wrapper>#ikki {
+    display: grid;
+    max-width: 72rem;
+    height: 54rem;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.tc_wrapper>#bir {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(../images/writer.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tc_wrapper>#ikki {
+    background-image: linear-gradient(320deg, rgba(217, 60, 101, 1) 0%, rgba(253, 253, 48, 1) 100%);
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.kard {
+    position: relative;
+}
+
+.kard>.in_kard {
+    width: 100%;
+    max-width: 72rem;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    justify-content: flex-start;
+    padding: 6%;
+    gap: 2.5rem;
+}
+
+.in_kard>.taytl {
+    text-align: center;
+    line-height: 5.5rem;
+    font-family: "Inter", sans-serif;
+}
+
+.in_kard>.taytl>.op_tit {
+    text-align: center;
+    font: normal normal bold 3.2rem Inter;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 0.27;
+}
+
+.in_kard>.taytl>.nop_tit {
+    text-align: center;
+    font: normal normal bold 4rem/6.8rem Noto Sans JP;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+}
+
+.in_kard>.xtxs {
+    font-size: 1.6rem;
+    text-align: center;
+    color: white;
+    line-height: 3.4rem;
+}
+
+.xtxs>img {
+    width: 34.2rem;
+    height: 25.5rem;
+}
+
+.pls_btn {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-self: center;
+    padding: 6% 6% 0%;
+}
+
+#ikki>.pls_btn {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    transform: translateY(-110%);
+    padding: 6% 6% 0%;
+}
+
+.pls_btn>a {
+    max-height: 6rem;
+    max-width: 6rem;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    align-self: center;
+    border: none;
+}
+
+.pls_btn>a>button {
+    max-height: 6rem;
+    max-width: 6rem;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    align-self: center;
+    border: none;
+    font-size: 5rem;
+}
+
+.xtxs>p {
+    font-size: 1.6rem;
+}
+
+.xtxs>.image {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    height: 25rem;
+}
+
+.image>img {
+    width: 100%;
+    height: 25rem;
+}
+
+.plus-button-tc-box {
+    position: absolute;
+    z-index: 3;
+    bottom: 2rem;
+    right: 2rem;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.2);
+}
+
+.plus-sign-tc {
+    background-color: #000;
+}
+
+.plus-sign-tc.horizontal-tc {
+    width: 2.2rem;
+    height: 0.2rem;
+}
+
+.plus-sign-tc.vertical-tc {
+    width: 0.2rem;
+    height: 2.2rem;
+    position: absolute;
+}
+
+@media screen and (max-width: 960px) {
+    .two_cards {
+        padding:4rem 8rem;
+    }
+
+    .two_cards>.tc_wrapper {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .kard>.in_kard {
+        width: 100%;
+        max-width: 100%;
+    }
+    .tc_wrapper>#bir,
+    .tc_wrapper>#ikki {
+        display: grid;
+        max-width: 100%;
+        height: 54rem;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .two_cards {
+        padding: 4rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    /* Same styles as 960px */
+}

@@ -1,5 +1,8 @@
 
+```
+git pull
 
-# OsakaEPTC_2.0
-OsakaEPTC_2.0
-test
+git add .
+git commit -m 'your commit message'
+git push
+````

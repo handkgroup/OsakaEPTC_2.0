@@ -1,0 +1,235 @@
+.faq-section {
+    max-width: 192rem;
+    display: flex;
+    margin: 0 auto;
+    gap: 8rem;
+    padding: 8rem 20rem 8rem 20rem;
+}
+
+.faq-title {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 5rem;
+    text-align: center;
+}
+
+.title-box-faq {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.5rem;
+    text-align: center;
+}
+
+.title-box-faq>p {
+    width: fit-content;
+    text-align: center;
+    font: normal normal bold 1.6rem Inter;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    background: #120291;
+    padding: 0.4rem 2.1rem;
+}
+
+.faq-title h3 {
+    text-align: center;
+    font: normal normal bold 4.6rem/5.5rem Noto Sans JP;
+    letter-spacing: 0px;
+    color: #000000;
+    min-width: max-content;
+}
+
+.faq-title .icon {
+    font-size: 2.4rem;
+}
+
+.faq-list-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    font: normal normal bold 1.5rem/1.8rem Noto Sans JP;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    background: #000000 0% 0% no-repeat padding-box;
+    gap: 3rem;
+    padding: 1.5rem 2rem;
+    border-radius: 70px;
+    width: fit-content;
+}
+
+.faq-list-btn p {
+    display: flex;
+    gap: .7rem;
+}
+
+.faq-list-btn p span {
+    font-size: 2.2rem;
+}
+
+.faq-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.faq-item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border-top: 1px solid #000000;
+}
+
+.faq-item:last-child {
+    border-bottom: 1px solid #000000;
+}
+
+.question {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    gap: 1rem;
+}
+
+.question-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.7rem;
+}
+
+.question-text p {
+    text-align: left;
+    font: normal normal bold 1.8rem/3.1rem Noto Sans JP;
+    letter-spacing: 0px;
+    color: #000000;
+    padding-right: 5.2rem;
+}
+
+.q-label {
+    text-align: center;
+    font: normal normal bold 3.0rem/4.2rem Inter;
+    letter-spacing: 0px;
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.answer {
+    display: none;
+    padding: 1rem;
+    background-color: #fff;
+    margin-top: 5px;
+}
+
+.answer p {
+    margin-left: 5rem;
+    text-align: left;
+    font: normal 1.6rem/3.1rem Noto Sans JP;
+    letter-spacing: 0px;
+    color: #000000;
+}
+
+.faq-toggle-button {
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F0F0F0 0% 0% no-repeat padding-box;
+}
+
+.plus-sign-faq {
+    background-color: #000;
+    transition: transform 0.3s ease;
+}
+
+.plus-sign-faq.horizontal-faq {
+    width: 1.8rem;
+    height: 0.2rem;
+}
+
+.plus-sign-faq.vertical-faq {
+    width: 0.2rem;
+    height: 1.8rem;
+    position: absolute;
+    transform: rotate(0deg);
+}
+
+.vertical-faq.rotated {
+    transform: rotate(90deg);
+}
+
+.faq-title-2 {
+    display: none;
+}
+
+@media (max-width:960px) {
+    .faq-section {
+        padding: 4rem 1rem;
+        flex-direction: column;
+        gap: 5rem;
+    }
+    .faq-title {
+        justify-content: center;
+        align-items: center;
+    }
+    .title-box-faq {
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width:520px) {
+    .faq-list-btn {
+        display: none;
+    }
+    
+    .faq-title-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+        text-align: center;
+    }
+    .faq-list-btn-2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+        font: normal normal bold 1.5rem/1.8rem Noto Sans JP;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        background: #000000 0% 0% no-repeat padding-box;
+        gap: 3rem;
+        padding: 1.5rem 2rem;
+        border-radius: 70px;
+        width: fit-content;
+    }
+    .faq-list-btn-2 p {
+        display: flex;
+        gap: .7rem;
+    }
+    .faq-list-btn-2 p span {
+        font-size: 2.2rem;
+    }
+}

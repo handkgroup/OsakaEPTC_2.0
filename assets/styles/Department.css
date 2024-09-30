@@ -1,0 +1,338 @@
+.department-courses-main {
+    width: 100%;
+    background: #EBF6FC 0% 0% no-repeat padding-box;
+}   
+
+.department-courses {
+    max-width: 192rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8rem 0rem 8rem 16rem;
+    gap: 3.65rem;
+}
+
+.top-title-dc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.top-title-dc p {
+    width: fit-content;
+    text-align: center;
+    font: normal normal bold 1.6rem Inter;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    background: #120291;
+    padding: 0.4rem 2.1rem;
+}
+
+.top-title-dc h2 {
+    text-align: center;
+    font: normal normal bold 4.6rem/5.5rem Noto Sans JP;
+    color: #000000;
+}
+
+.top-title-dc span {
+    width: 5rem;
+    height: 5rem;
+}
+
+.dc-course-cards {
+    width: 100%;
+    display: flex;
+    gap: 2.2rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    padding-bottom: 4rem;
+}
+
+.dc-course-cards::-webkit-scrollbar {
+    height: 0.4rem;
+    width: 80%;
+}
+
+.dc-course-cards::-webkit-scrollbar-thumb {
+    background: #000000;
+    border-radius: 0.5rem;
+}
+
+.dc-course-cards::-webkit-scrollbar-track {
+    background: #E0E0E0;
+    border-radius: 0.5rem;
+}
+
+
+.card-dc {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0.5rem;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+}
+
+.card-image-dc {
+    position: relative;
+    width: 48.5rem;
+    height: 40rem;
+    border-radius: 2rem;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    opacity: 0.95;
+}
+
+.img-box-dc {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 2rem;
+    transition: all 0.5s ease;
+} 
+
+.img-box-dc:hover ~ .plus-button-dc-box {
+    border: 2px solid #FFFFFF; 
+    background: none;
+}
+
+.img-box-dc:hover ~ .plus-button-dc-box .plus-sign {
+    background-color: #FFFFFF;
+}
+
+.card-dc:nth-of-type(5n+1) .img-box-dc:hover {
+    background: transparent linear-gradient(180deg, #FFFFFF00 0%, #00369D 100%) 0% 0% no-repeat padding-box;
+}
+
+.card-dc:nth-of-type(5n+2) .img-box-dc:hover {
+    background: transparent linear-gradient(180deg, #FFFFFF00 0%, #00767B 100%) 0% 0% no-repeat padding-box;
+}
+
+.card-dc:nth-of-type(5n+3) .img-box-dc:hover {
+    background: transparent linear-gradient(180deg, #FFFFFF00 0%, #9D7300 100%) 0% 0% no-repeat padding-box;
+}
+
+.card-dc:nth-of-type(5n+4) .img-box-dc:hover {
+    background: transparent linear-gradient(180deg, #FFFFFF00 0%, #3E007B 100%) 0% 0% no-repeat padding-box;
+}
+
+.card-dc:nth-of-type(5n+0) .img-box-dc:hover {
+    background: transparent linear-gradient(180deg, #FFFFFF00 0%, #C70000 100%) 0% 0% no-repeat padding-box; /* Example color */
+}
+
+
+.img-box-dc img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; 
+    position: absolute; 
+}
+
+
+.card-content-dc {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 2rem 2rem 2rem 3rem;
+    position: relative;
+    width: 100%;
+}
+
+.card-content-dc h3 {
+    text-align: left;
+    font: normal normal bold 3.4rem Noto Sans JP;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.card-content-dc p {
+    width: calc(100% - 8rem);
+    text-align: left;
+    font: normal normal bold 1.6rem Noto Sans JP;
+    color: #FFFFFF;
+}
+
+.card-content-dc span {
+    background: #FDFD30;
+    border-radius: 3rem;
+    font: normal normal bold 1.5rem Noto Sans JP;
+    color: #000000;
+    text-transform: uppercase;
+    padding: 0 1rem;
+    width: fit-content;
+    height: fit-content;
+}
+
+.plus-button-dc-box {
+    position: absolute;
+    z-index: 3;
+    bottom: 2rem;
+    right: 2rem;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.2);
+}
+
+.plus-sign {
+    background-color: #000;
+}
+
+.plus-sign.horizontal {
+    width: 2.2rem;
+    height: 0.2rem;
+}
+
+.plus-sign.vertical {
+    width: 0.2rem;
+    height: 2.2rem;
+    position: absolute;
+}
+
+.cards-box-footer-dc {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+}
+
+.card-footer-dc {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    box-shadow: 0 0.3rem 0.8rem #0000001A;
+    border-radius: 1rem;
+    padding: 2rem 2.3rem 2rem 3rem;
+}
+
+.card-footer-dc:hover >span {
+    background-color: #000;
+}
+.card-footer-dc:hover >span svg path{
+    stroke: #FFFFFF;
+}
+
+.card-footer-dc p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+    text-align: left;
+    font: normal normal bold 1.6rem/1.9rem Noto Sans JP;
+    color: #000000;
+}
+
+.card-footer-dc p span {
+    font-size: 3.4rem;
+}
+
+.card-footer-dc>span {
+    width: 3.4rem;
+    height: 3.4rem;
+    border: 0.1rem solid #000000;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-footer-dc >span svg {
+    width: 1.7rem;
+    height: 1.7rem;
+}
+
+
+@media (max-width: 960px) {
+ 
+    .department-courses {
+        padding: 4rem 0 4rem 4rem;
+        gap: 3rem;
+    }
+
+    .top-title-dc h2 {
+        font: normal normal bold 4rem/4.5rem Noto Sans JP;
+    }
+
+    .dc-course-cards {
+        gap: 2rem;
+    }
+
+    .card-dc {
+        gap: 2rem;
+    }
+
+    .card-image-dc {
+        height: 30rem;
+    }
+
+    .card-content-dc {
+        padding: 2rem 2rem 2rem 2.5rem;
+    }
+
+    .card-content-dc h3 {
+        font: normal normal bold 3rem Noto Sans JP;
+    }
+
+    .card-content-dc p {
+        font: normal normal bold 1.6rem Noto Sans JP;
+    }
+
+    .card-footer-dc {
+        padding: 2rem 2.5rem;
+    }
+
+    .card-footer-dc p {
+        font: normal normal bold 1.6rem/1.8rem Noto Sans JP;
+    }
+
+    .plus-button-dc-box {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .plus-sign.horizontal {
+        width: 2rem;
+        height: 0.3rem;
+    }
+
+    .plus-sign.vertical {
+        width: 0.3rem;
+        height: 2rem;
+    }
+}
+
+@media (max-width: 520px) {
+    
+    .dc-course-cards {
+        flex-direction: column;
+    }
+    .card-dc {
+        width: 100%;
+    }
+    .card-image-dc {
+        width: 100%;
+        height: 45rem;
+    }
+    .department-courses {
+        padding: 4rem 4rem;
+    }
+}   

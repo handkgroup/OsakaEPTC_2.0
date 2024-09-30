@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="749.008" height="127" viewBox="0 0 749.008 127">
+  <g id="Group_13789" data-name="Group 13789" transform="translate(136.008 -62.682)">
+    <text id="ROBOT" transform="translate(405 164.648)" fill="#fff" font-size="110" font-family="Helvetica-Bold, Helvetica" font-weight="700" letter-spacing="0.04em"><tspan x="-207.396" y="0">ROBOT</tspan></text>
+    <path id="close" d="M39.638,36.476,58.085,18.029a2.225,2.225,0,0,0-3.138-3.138L36.5,33.338,18.054,14.869a2.234,2.234,0,1,0-3.16,3.16L33.363,36.476,14.894,54.923a2.225,2.225,0,1,0,3.138,3.138L36.5,39.614,54.948,58.061a2.225,2.225,0,0,0,3.138-3.138Z" transform="translate(134.38 88.121)" fill="#fff"/>
+    <g id="text" transform="translate(-3.504)">
+      <text id="AI_" data-name="AI " transform="translate(83 164.648)" fill="#fff" font-size="110" font-family="Helvetica-Bold, Helvetica" font-weight="700" letter-spacing="0.04em"><tspan x="-57.2" y="0">AI</tspan></text>
+    </g>
+    <path id="close-2" data-name="close" d="M39.638,36.476,58.085,18.029a2.225,2.225,0,0,0-3.138-3.138L36.5,33.338,18.054,14.869a2.234,2.234,0,1,0-3.16,3.16L33.363,36.476,14.894,54.923a2.225,2.225,0,1,0,3.138,3.138L36.5,39.614,54.948,58.061a2.225,2.225,0,0,0,3.138-3.138Z" transform="translate(-48.124 88.121)" fill="#fff"/>
+    <g id="text-2" data-name="text" transform="translate(27.992)">
+      <g id="Group_3862" data-name="Group 3862">
+        <text id="人" transform="translate(-118 158.682)" fill="#fff" font-size="91" font-family="PingFangSC-Semibold, PingFang SC" font-weight="600"><tspan x="-45.5" y="0">人</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

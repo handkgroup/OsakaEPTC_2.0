@@ -1,0 +1,192 @@
+.about_us {
+    position: relative;
+    width: 100%;
+    background: linear-gradient(to right, #F8E2E5, #FCF4FB, #E6F8ED);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about_us .bg_txt {
+    width: 98%;
+    position: absolute;
+}
+
+.about_us .wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 5.5rem 8.5rem;
+    z-index: 5;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3rem;
+    grid-template-areas: 'h6  for_img' 'bg_line  for_img' 'only_txt  for_img';
+}
+
+.about_us .wrapper .for_img {
+    display: flex;
+    position: static;
+    align-items: center;
+    justify-content: center;
+    grid-area: for_img;
+}
+
+.about_us .wrapper .for_img img {
+    width: 100%;
+}
+
+.about_us .wrapper h6 {
+    font-size: 4.6rem;
+    font-weight: bold;
+    grid-area: h6;
+}
+
+.about_us .wrapper h6 span {
+    width: fit-content;
+    display: block;
+    font-size: 1.6rem;
+    font-weight: bold;
+    background: var(--unnamed-color-120291);
+    color: #fff;
+    padding: .4rem 1.6rem;
+    margin-bottom: 1.6rem;
+}
+
+.about_us .wrapper .bg_line {
+    font-size: 5rem;
+    font-weight: bold;
+    margin: 9rem 0 5.5rem;
+    grid-area: bg_line;
+}
+
+.about_us .wrapper .bg_line span {
+    display: block;
+    width: fit-content;
+    position: relative;
+    line-height: 7.3rem;
+}
+
+.about_us .wrapper .bg_line span::before {
+    position: absolute;
+    content: "";
+    background: #FDFD30;
+    width: 100%;
+    height: 1.8rem;
+    left: 0;
+    bottom: .5rem;
+    z-index: -1;
+}
+
+.about_us .wrapper .bg_line span:last-child::before {
+    width: 85%;
+}
+
+.about_us .wrapper .bg_line span img {
+    position: relative;
+    transform: translateY(15%);
+    max-width: 6.1rem;
+    width: 100%;
+}
+
+.about_us .wrapper .only_txt {
+    font-size: 1.8rem;
+    font-weight: normal;
+    max-width: 69rem;
+    grid-area: only_txt;
+    line-height: 3.2rem;
+}
+
+
+/*====================== media================== */
+
+@media (max-width: 1640px) {
+    .about_us .wrapper .bg_line {
+        margin: 7rem 0 3.5rem;
+    }
+}
+
+@media (max-width: 1440px) {
+    .about_us .wrapper {
+        padding: 4rem 6rem;
+    }
+    .about_us .wrapper .for_txt {
+        padding: 0;
+    }
+    .about_us .wrapper h6 {
+        font-size: 4rem;
+    }
+    .about_us .wrapper .bg_line {
+        font-size: 4rem;
+        font-weight: bold;
+        margin: 4rem 0 3rem;
+        grid-area: bg_line;
+    }
+    .about_us .wrapper .bg_line span:last-child {
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+    .about_us .wrapper .bg_line span img {
+        margin: 0;
+    }
+}
+
+@media (max-width: 960px) {
+    .about_us {
+        max-height: 140vh;
+    }
+    .about_us .bg_txt {
+        width: 98%;
+        position: absolute;
+        top: 15%;
+    }
+    .about_us .wrapper {
+        padding: 5rem 1rem;
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+        row-gap: 1rem;
+        grid-template-areas: 'h6 ' 'for_img' 'bg_line ' 'only_txt';
+        justify-items: center;
+    }
+    .about_us .wrapper .for_img img {
+        width: 100%;
+    }
+    .about_us .wrapper h6 {
+        text-align: center;
+    }
+    .about_us .wrapper h6 span {
+        margin: 0 auto 1.6rem;
+    }
+    .about_us .wrapper .bg_line {
+        font-size: 4rem;
+        font-weight: bold;
+        margin: 0;
+        grid-area: bg_line;
+    }
+    .about_us .wrapper .bg_line span {
+        display: block;
+        width: fit-content;
+        position: relative;
+        margin: 0 auto;
+    }
+    .about_us .wrapper .bg_line span:last-child {
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+    .about_us .wrapper .bg_line span img {
+        margin: 0;
+    }
+    .about_us .wrapper .only_txt {
+        font-size: 1.6rem;
+        font-weight: normal;
+        max-width: fit-content;
+        height: fit-content;
+        grid-area: only_txt;
+        padding: 3rem;
+    }
+}
