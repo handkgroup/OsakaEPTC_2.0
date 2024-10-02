@@ -15,26 +15,3 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
-
-// pagination js 
-function updatePaginationDisplay() {
-    const paginationLinks = document.querySelectorAll('.pagination .case-page');
-    const totalPages = paginationLinks.length;
-
-    paginationLinks.forEach((link, index) => {
-        link.style.display = 'inline';
-    });
-
-    if (window.innerWidth <= 768) {
-        paginationLinks.forEach((link, index) => {
-            if (index > 2 && index < totalPages - 1 && link.textContent !== '...') {
-                link.style.display = 'none';
-            }
-        });
-        paginationLinks[totalPages - 1].style.display = 'inline';
-    }
-}
-
-updatePaginationDisplay();
-window.addEventListener('resize', updatePaginationDisplay);
-
