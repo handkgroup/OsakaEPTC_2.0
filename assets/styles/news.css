@@ -42,11 +42,12 @@
     font-size: 3.3rem;
 }
 
-.title-box-news>p {
+.title-box-news p {
     text-align: left;
     letter-spacing: 0px;
     color: #000000;
     min-width: max-content;
+    font-size:1.4rem;
 }
 
 .news-list-btn {
@@ -66,6 +67,7 @@
 .news-list-btn p {
     display: flex;
     gap: 0.7rem;
+    font-size: 1.5rem;
 }
 
 .news-list-btn span {
@@ -87,6 +89,7 @@
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
+    font-size:1.5rem;
 }
 
 .news-links-top::-webkit-scrollbar {
@@ -97,7 +100,6 @@
     background: #F3F3F6;
     border-radius: 100px;
     text-align: left;
-    font-size: 1.2rem;
     color: #000000;
     padding: 1.4rem 3.6rem;
     min-width: fit-content;
@@ -146,7 +148,7 @@
     min-width: fit-content;
 }
 
-.news-item a {
+.news-items-left a {
     background: #F3F3F6 0% 0% no-repeat padding-box;
     border-radius: 100px;
     text-align: left;
@@ -157,10 +159,29 @@
     min-width: fit-content;
 }
 
-.news-items .news-item:nth-child(1) a {
+.news-items-right {
+    text-align: left;
+    font: normal normal bold 15px/18px Noto Sans JP;
+    letter-spacing: 0px;
+    color: #000000;
+}
+
+.news-items-red {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    min-width: fit-content;
+}
+
+.news-items-red a{
     padding: .6rem 2.5rem;
     background: #D30000 0% 0% no-repeat padding-box;
+    border-radius: 100px;
+    text-align: left;
+    font: normal normal bold 14px/19px Noto Sans JP;
+    letter-spacing: 0px;
     color: #FFFFFF;
+    min-width: fit-content;
 }
 
 .news-item p {
@@ -172,6 +193,15 @@
 
 .news-title-2 {
     display: none;
+}
+
+@media (max-width: 1024px) {
+    .news-section {
+        width: 100%;
+        display: flex;
+        margin: 0 auto;
+        padding: 8rem 2rem;
+}
 }
 
 @media (max-width: 960px) {
@@ -201,7 +231,7 @@
     }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 768px) {
     .news-title-2 {
         display: flex;
         flex-direction: column;
@@ -213,7 +243,25 @@
         width: 100%;
     }
 
+    .title-box-news h2{
+        font-size:2.8rem;
+    }
 
+    .news-links-top a{
+        font-size:1.2rem;
+    }
+
+    .news-items-red span{
+        font-size:1.2rem;
+    }
+
+    .news-items-red a{
+        font-size:1.1rem;
+    }
+
+    .news-items-right{
+        font-size:1.3rem;
+    }
 
     .news-section {
         padding: 4rem;
@@ -238,6 +286,7 @@
     .news-list-btn-2 p {
         display: flex;
         gap: 0.7rem;
+        font-size:1.5rem;
     }
     .news-list-btn-2 span {
         font-size: 2.2rem;

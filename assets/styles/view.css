@@ -4,6 +4,17 @@
     box-sizing: border-box;
 }
 
+p {
+    font-size: 1.6rem;
+    font-weight: 600;
+    align-self: center;
+}
+
+h1 {
+    font-size: 4.6rem;
+    text-align: center;
+}
+
 .dropbtn {
     background-color: #ffffff;
     border: none;
@@ -190,7 +201,7 @@
     font-size: 2.8rem;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1024px) {
     .slider > #one,
     .slider > #two,
     .slider > #three {
@@ -200,12 +211,12 @@
     }
 
     .viewers {
-        max-width: 960px;
-        padding: 8rem;
+        max-width: 1024px;
+        padding: 1rem;
     }
 
     .view_wrap > .slider {
-        width: calc(100% + 8rem);
+        width: calc(100% + 1rem);
         justify-content: start;
         overflow-x: auto;
         white-space: nowrap;
@@ -220,15 +231,16 @@
     }
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 768px) {
     .viewers {
-        max-width: 520px;
-        padding: 4rem;
+        max-width: 768px;
+        padding: 4rem 1rem 4rem 1rem;
     }
-    
-    .view_wrap > .slider {
-        width: calc(100% + 4rem);
+    .blinfo h2{
+        padding: 2rem;
+        text-align: center;;
     }
+
 }
 
 @media screen and (max-width: 320px) {

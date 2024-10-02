@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <g id="open_close" data-name="open/close" transform="translate(-959 -151)">
+    <path id="パス_3041" data-name="パス 3041" d="M15,0A15,15,0,1,1,0,15,15,15,0,0,1,15,0Z" transform="translate(959 151)" fill="#fff"/>
+    <g id="Icon_feather-plus" data-name="Icon feather-plus" transform="translate(969 161)">
+      <path id="パス_26" data-name="パス 26" d="M18,7.5V17.912" transform="translate(-12.794 -7.5)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="パス_27" data-name="パス 27" d="M7.5,18H17.912" transform="translate(-7.5 -12.794)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>

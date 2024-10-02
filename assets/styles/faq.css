@@ -26,7 +26,7 @@
 .title-box-faq>p {
     width: fit-content;
     text-align: center;
-    font: normal normal bold 1.6rem Inter;
+    font: normal normal bold 2.1rem Inter;
     color: #FFFFFF;
     text-transform: capitalize;
     background: #120291;
@@ -60,12 +60,13 @@
     width: fit-content;
 }
 
-.faq-list-btn p {
+.faq-list-btn a {
     display: flex;
     gap: .7rem;
+    font-size: 1.5rem;
 }
 
-.faq-list-btn p span {
+.faq-list-btn a span {
     font-size: 2.2rem;
 }
 
@@ -182,7 +183,7 @@
     display: none;
 }
 
-@media (max-width:960px) {
+@media (max-width:1024px) {
     .faq-section {
         padding: 4rem 1rem;
         flex-direction: column;
@@ -199,7 +200,7 @@
     }
 }
 
-@media (max-width:520px) {
+@media (max-width:768px) {
     .faq-list-btn {
         display: none;
     }

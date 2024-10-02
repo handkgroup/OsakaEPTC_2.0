@@ -121,16 +121,18 @@
     width: calc(100% - 8rem);
 }
 
-.card-content-f h3 {
+.card-content-f-text1 {
     text-align: left;
-    font: normal normal bold 50px/56px Noto Sans JP;
+    font-size:3.4rem;
     letter-spacing: 0px;
     color: #FFFFFF;
+    width: 100%
 }
 
-.card-content-f p {
+.card-content-f-text2 {
     text-align: left;
-    font: normal normal bold 34px/56px Noto Sans JP;
+    font-size:5rem;
+    font-weight: bold;
     letter-spacing: 0px;
     color: #FFFFFF;
     width: 100%
@@ -138,7 +140,8 @@
 
 .card-content-f span {
     text-align: left;
-    font: normal normal bold 18px/23px Inter;
+    font-size:1.8rem;
+    font-weight: bold;
     letter-spacing: 0px;
     color: #FFFFFF;
     text-transform: capitalize;
@@ -176,13 +179,15 @@
 
 .cards-box-footer-f {
     text-align: left;
-    font: normal normal 600 1.8rem/3.4rem Noto Sans JP;
     letter-spacing: 0px;
-    color: #000000;
     width: 100%;
 }
 
-@media (max-width: 960px) {
+.cards-box-footer-f p{
+font-size:1.8rem;
+}
+
+@media (max-width: 1024px) {
     .features {
         padding: 6rem 0rem 6rem 1rem;
         ;
@@ -209,12 +214,6 @@
     }
     .card-content-f {
         padding: 2rem 2rem 2rem 2rem;
-    }
-    .card-content-f h3 {
-        font: normal normal bold 5rem Noto Sans JP;
-    }
-    .card-content-f p {
-        font: normal normal bold 3rem Noto Sans JP;
     }
     .plus-button-box-f {
         width: 5rem;
@@ -243,9 +242,25 @@
     }
 }
 
-@media (max-width:520px) {
+@media (max-width:768px) {
     .features {
         padding: 4rem 0rem 4rem 1rem;
         ;
     }
+    .card-content-f-text1 {
+        font-size:1.8rem;
+    }
+    
+    .card-content-f-text2 {
+        font-size:2.8rem;
+    }
+    .card-content-f span {
+        font-size:1.8rem;
+    }
+    .card-image-f {
+        min-height: 30rem;
+    }
+    .cards-box-footer-f p{
+        font-size:1.3rem;
+        }
 }

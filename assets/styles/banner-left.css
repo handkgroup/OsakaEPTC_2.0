@@ -1,0 +1,39 @@
+.banner-wrapper-left {
+    display: flex;
+    flex-direction: column;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #dbdfe0;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    overflow: visible;
+    position: fixed;
+    bottom: 20px;
+    left: 5%;
+    transform: translateX(-50%);
+    z-index: 1000;
+}
+
+.banner-wrapper-left a {
+    padding: 2rem;
+}
+
+.banner-wrapper-left a img {
+    max-width: 2rem;
+    width: 100%;
+    height: 2rem;
+}
+
+.banner-wrapper-left .banner-line {
+    width: 100%;
+    height: 0.1rem;
+    background: rgb(207, 206, 206);
+}
+
+@media (max-width: 960px) {
+    .banner-wrapper-left {
+        display: none;
+    }
+}

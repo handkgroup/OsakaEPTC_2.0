@@ -36,13 +36,13 @@
 
 .titles>.big_title h2 {
     text-align: left;
-    font: normal normal bold 5rem/6rem Inter;
+    font-size: 7.2rem;
     letter-spacing: 0px;
     color: #000000;
     text-transform: uppercase;
 }
 
-.titles>.subtitle {
+.subtitle p {
     font-size: 1.4rem;
 }
 
@@ -50,21 +50,21 @@
     align-self: center;
 }
 
-.top_part>a>button {
+.top_part .top_part_btn{
     flex-wrap: wrap;
     width: 19.2rem;
     max-width: 100%;
     height: 5.2rem;
     max-height: 100%;
     background-color: black;
-    padding: 10px;
+    padding: 1rem;
     color: white;
     border: none;
-    border-radius: 50px;
+    border-radius: 5rem;
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
     align-content: center;
+    font-size: 1.5rem;
 }
 
 .column_wrapper>.card_wrapper {
@@ -129,26 +129,32 @@
     font-size: 1.6rem;
     width: 100%;
     line-height: 3.2rem;
+    font-weight: normal;
+    color: #000;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1024px) {
     .column_wrapper>.card_wrapper {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 2.2rem;
         width: 100%;
-        /* height: 48.5rem; */
         justify-content: center;
     }
     .column {
-        padding: 8rem 8rem;
+        padding: 2rem;
     }
+
+.titles>.big_title h2 {
+    text-align: left;
+    font-size: 2.8rem;
+    letter-spacing: 0px;
+    color: #000000;
+    text-transform: uppercase;
+}
 }
 
-@media screen and (max-width: 520px) {
-    .column {
-        padding: 4rem 4rem;
-    }
+@media screen and (max-width: 960px) {
     .column_wrapper>.card_wrapper {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -167,6 +173,12 @@
     }
     .card_wrapper>.cart {
         max-width: unset;
+    }
+    .cart>.bottom {
+        font-size: 1.3rem;
+    }
+    .top_part .top_part_btn {
+        display: none;
     }
 }
 

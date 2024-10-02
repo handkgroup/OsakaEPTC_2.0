@@ -149,13 +149,14 @@
     width: 100%;
 }
 
-.card-content-dc h3 {
+.card-dc .card-content-dc a{
     text-align: left;
-    font: normal normal bold 3.4rem Noto Sans JP;
+    font-size:3.4rem;
+    font-weight: bold;
     color: #FFFFFF;
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 1.2rem;
 }
 
 .card-content-dc p {
@@ -261,13 +262,14 @@
 }
 
 
-@media (max-width: 960px) {
- 
+
+@media (max-width: 1024px) {
     .department-courses {
-        padding: 4rem 0 4rem 4rem;
+        padding: 2rem 2rem 2rem 2rem;
         gap: 3rem;
     }
-
+}
+    @media (max-width: 758px) {
     .top-title-dc h2 {
         font: normal normal bold 4rem/4.5rem Noto Sans JP;
     }
@@ -280,20 +282,23 @@
         gap: 2rem;
     }
 
-    .card-image-dc {
-        height: 30rem;
-    }
-
     .card-content-dc {
-        padding: 2rem 2rem 2rem 2.5rem;
+        padding: 2rem 0rem 2rem 2rem;
+        gap: 1.2rem;
     }
 
-    .card-content-dc h3 {
-        font: normal normal bold 3rem Noto Sans JP;
+    .card-content-dc span {
+        font-size: 1.2rem;
+    }
+
+    .card-dc .card-content-dc a{
+        font-size: 2.3rem;
+        align-items: start;
+        flex-direction: column-reverse;
     }
 
     .card-content-dc p {
-        font: normal normal bold 1.6rem Noto Sans JP;
+        font-size: 1.3rem;
     }
 
     .card-footer-dc {
@@ -301,7 +306,7 @@
     }
 
     .card-footer-dc p {
-        font: normal normal bold 1.6rem/1.8rem Noto Sans JP;
+        font-size: 1.5rem;
     }
 
     .plus-button-dc-box {
@@ -320,7 +325,7 @@
     }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 758px) {
     
     .dc-course-cards {
         flex-direction: column;
@@ -330,9 +335,5 @@
     }
     .card-image-dc {
         width: 100%;
-        height: 45rem;
-    }
-    .department-courses {
-        padding: 4rem 4rem;
     }
 }   

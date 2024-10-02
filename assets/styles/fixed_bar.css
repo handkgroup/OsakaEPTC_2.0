@@ -1,111 +1,119 @@
 .banner .wrapper {
-    position: relative;
-    margin: 0 8rem 8rem 8rem;
-    max-height: 83rem;
-    overflow: hidden;
-    background: #000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 2rem;
-    margin-top: 2rem;
+position: relative;
+margin: 0 8rem 8rem 8rem;
+max-height: 83rem;
+overflow: hidden;
+background: #000;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 2rem;
+margin-top: 2rem;
 
 }
 
 .banner .wrapper .bg_img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
+width: 100%;
+height: 100%;
+object-fit: cover;
+position: absolute;
 }
 
 .banner .wrapper .for_txt {
-    max-width: 82rem;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    z-index: 5;
-    text-align: center;
-    margin: 10rem auto;
+max-width: 90rem;
+position: relative;
+width: 100%;
+height: 100%;
+z-index: 5;
+text-align: center;
+margin: 10rem auto;
 }
 
-.banner .wrapper .for_txt h6 .txt1 {
-    width: fit-content;
-    margin: 0 auto;
-    display: block;
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: #fff;
-    margin-bottom: 2.8rem;
+.banner .wrapper .for_txt .txt1 {
+width: fit-content;
+margin: 0 auto;
+display: block;
+font-size: 1.8rem;
+font-weight: bold;
+color: #fff;
 }
 
-.banner .wrapper .for_txt h6 .txt2 {
-    width: fit-content;
-    height: fit-content;
-    display: flex;
-    align-items: flex-end;
-    font-weight: bold;
-    color: #fff;
-    font-family: var(--font-family);
-    font-size: 11rem;
+.banner .wrapper .for_txt .txt2 {
+width: fit-content;
+height: fit-content;
+display: flex;
+align-items: flex-end;
+font-weight: bold;
+color: #fff;
+font-family: var(--font-family);
+font-size: 11rem;
 }
 
-.banner .wrapper .for_txt h6 .txt2 img {
-    max-width: 7.2rem;
-    margin-bottom: 1rem;
+.banner .wrapper .for_txt .txt2 img {
+max-width: 7.2rem;
+margin-bottom: 1rem;
 }
 
-.banner .wrapper .for_txt h6 .txt3 {
-    width: fit-content;
-    margin: 0 auto;
-    display: block;
-    font-size: 1.5rem;
-    font-weight: normal;
-    color: #fff;
-    margin-bottom: 4.3rem;
+.banner .wrapper .for_txt .txt3 {
+width: fit-content;
+margin: 0 auto;
+display: block;
+font-size: 1.5rem;
+font-weight: normal;
+color: #fff;
+margin-bottom: 4.3rem;
 }
 
 .banner .wrapper .for_txt p {
-    width: fit-content;
-    margin: 0 auto;
-    display: block;
-    font-size: 1.5rem;
-    font-weight: normal;
-    color: #fff;
-    line-height: 3.4rem;
-    margin-bottom: 4.7rem;
+width: fit-content;
+margin: 0 auto;
+display: block;
+font-size: 1.5rem;
+font-weight: normal;
+color: #fff;
+line-height: 3.4rem;
+margin-bottom: 4.7rem;
 }
 
 .banner .wrapper .for_txt .btn {
-    width: fit-content;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #000;
-    background-color: #fff;
-    padding: 1.5rem 2rem;
-    border-radius: 50rem;
-    display: flex;
-    gap: 1.5rem;
-    margin: 0 auto;
+width: fit-content;
+font-size: 1.5rem;
+font-weight: bold;
+color: #000;
+background-color: #fff;
+padding: 1.5rem 2rem;
+border-radius: 50rem;
+display: flex;
+gap: 1.5rem;
+margin: 0 auto;
 }
 
 .banner .wrapper .for_txt .btn img {
-    width: 2rem;
+width: 2rem;
 }
 
+@media (max-width: 1024px){
+.banner .wrapper {
+margin: 0 1rem 8rem 1rem;
+}
+}
 
 /*====================== media================== */
-
 @media (max-width: 768px) {
-    .banner .wrapper .for_txt h6 .txt2 {
-        font-size: 7rem;
-        margin: 0 auto;
-    }
+.banner .wrapper .for_txt .txt1 {
+    font-size: 1.6rem;
 }
-
-@media (max-width: 768px) {
-    .banner .wrapper .for_txt h6 .txt2 {
-        font-size: 5rem;
-        margin: 0 auto;
-    }
+.banner .wrapper .for_txt .txt2 {
+    font-size: 5.8rem;
+}
+.banner .wrapper .for_txt .txt3 {
+    font-size: 1.1rem;
+}
+.banner .wrapper .for_txt .txt2 {
+    font-size: 5rem;
+    margin: 0 auto;
+}
+.banner .wrapper .for_txt p {
+    font-size: 1.3rem;
+}
 }

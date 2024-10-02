@@ -1,70 +1,56 @@
 .first_view {
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    /* Align items at the bottom */
+width: 100%;
+height: 100vh;
+overflow: hidden;
+display: flex;
+justify-content: center;
+align-items: flex-end;
 }
 
 .first_view .video_container {
-    position: relative;
-    height: 100vh;
-    /* Full viewport height */
-    width: 100%;
-    overflow: hidden;
+position: relative;
+height: 100vh;
+width: 100%;
+overflow: hidden;
 }
 
 .first_view video {
-    height: 100%;
-    width: auto;
-    /* Maintain aspect ratio */
-    max-width: none;
+height: 100%;
+width: auto;
+max-width: none;
 }
 
 .first_view .text_container {
-    position: absolute;
-    left: 5%;
-    transform: translateY(-50%);
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    /* Align text to the start */
+position: absolute;
+left: 5%;
+transform: translateY(-50%);
+color: #fff;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
 }
 
 .first_view .text_container img {
-    width: 80%;
+width: 80%;
 }
 
+@media (min-width: 768px) {
 .first_view .text_container p {
-    font-size: 3.4rem;
-    font-weight: normal;
+font-size: 3.4rem;
+}
 }
 
-@media (max-width: 960px) {
-    .first_view {
-        /* width: 100%; */
-        height: 80vh;
-        /* Maintain full viewport height */
-        overflow: hidden;
-        justify-content: flex-start;
-        /* Align items at the top for small screens */
-        align-items: flex-start;
-        /* Align items at the top for small screens */
+@media (max-width: 768px) {
+.first_view {
+    height: 80vh;
+}
+
+.first_view .text_container {
+    top: 70%;
+    left: 0%;
+    padding: 3rem;
+}
+.first_view .text_container p {
+    font-size: 1.8rem;
     }
-    .first_view .video_container {
-        height: auto;
-        /* Allow the video container to adapt to content height */
-    }
-    .first_view .text_container {
-        top: 70%;
-        /* Optionally adjust for spacing if needed */
-        left: 0%;
-    }
-    .first_view .text_container p {
-        font-size: 1.8rem;
-    }
-    
 }
