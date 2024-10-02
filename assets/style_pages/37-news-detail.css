@@ -1,0 +1,448 @@
+.container-nl {
+    max-width: 192rem;
+    margin: auto;
+}
+
+.contener-clp {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 94rem;
+    width: 100%;
+}
+
+.title-list-pages {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    padding: 20rem 16rem 4rem 16rem;
+    margin: 0 auto;
+}
+
+.tl-texts {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.tl-texts span {
+    font-size: 5.4rem;
+    width: 6rem;
+    height: 6rem;
+}
+
+.tl-texts h1 {
+    font-size: 5.4rem;
+    font-weight: 700;
+}
+
+.tl-texts p {
+    font-size: 4.6rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+.tl-link-tags {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.tl-link-tags p {
+    font-size: 1.6rem;
+}
+
+.tl-link-tags p:first-child {
+    color: #A8A8A8;
+}
+
+.tl-link-tags svg path {
+    fill: #A8A8A8;
+}
+
+.news-detail-section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 9rem;
+    padding: 4rem 16rem;
+}
+
+.news-detail-main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 3.4rem;
+}
+
+.news-detail-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    gap: 4rem;
+}
+
+.news-detail-content {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.news-detail-content p {
+    text-align: justify;
+    font: normal normal medium 1.6rem/3.4rem Noto Sans JP;
+    letter-spacing: 0px;
+    color: #000000;
+}
+
+.news-detail-item {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+    padding: 2.4rem 1.6rem;
+    width: 100%;
+}
+
+.news-detail-items-red {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    min-width: fit-content;
+}
+
+.news-detail-items-red span {
+    text-align: left;
+    font: normal normal normal 13px/47px Noto Sans JP;
+    letter-spacing: 0px;
+    color: #A8A8A8;
+    text-transform: uppercase;
+    min-width: fit-content;
+}
+
+.news-detail-items-red a {
+    padding: .6rem 2.3rem;
+    background: #F3F3F6 0% 0% no-repeat padding-box;
+    border-radius: 100px;
+    text-align: left;
+    font: normal normal bold 14px/19px Noto Sans JP;
+    letter-spacing: 0px;
+    color: #000000;
+    min-width: fit-content;
+}
+
+.news-detail-items-right {
+    text-align: left;
+    font: normal normal bold 15px/18px Noto Sans JP;
+    letter-spacing: 0px;
+    color: #000000;
+}
+
+.news-detail-items-right h1 {
+    font-size: 3rem;
+}
+
+.news-detail-title-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.news-detail-btn-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    font: bold 1.5rem/1.8rem Noto Sans JP;
+    color: #FFFFFF;
+    background: #000000;
+    padding: 1.5rem 2rem;
+    border-radius: 70px;
+    gap: 3rem;
+    min-width: max-content;
+}
+
+.news-detail-btn-2 p {
+    display: flex;
+    gap: 0.7rem;
+    font-size: 1.5rem;
+}
+
+.news-detail-btn-2 span {
+    font-size: 2.2rem;
+}
+
+.list-pages-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+}
+
+.lpr-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 3.4rem;
+    gap: 3rem;
+}
+
+.lpr-item p {
+    text-align: left;
+    font: normal normal bold 2.2rem/3.2rem Inter;
+    letter-spacing: 0px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.lpr-item-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.lpr-link-btn {
+    background: #F3F3F6;
+    border-radius: 100px;
+    text-align: left;
+    color: #000000;
+    width: max-content;
+    padding: 1.4rem 3.6rem;
+    min-width: fit-content;
+    font: normal normal bold 1.5rem/1.9rem Noto Sans JP;
+}
+
+.bg-black {
+    background: #000000 !important;
+    color: #FFFFFF !important;
+}
+
+.bg-red {
+    padding: 1.4rem 4.5rem !important;
+    background: #D30000 !important;
+    color: #FFFFFF !important;
+}
+
+.lpr-drop-down {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000000;
+    border-radius: 100px;
+    padding: 1.1rem 3.6rem;
+    width: max-content;
+    min-width: fit-content;
+    gap: 3rem;
+}
+
+.lpr-drop-down p {
+    text-align: center;
+    font-size: 1.5rem;
+    letter-spacing: 0px;
+    color: #000000;
+}
+
+.lpr-drop-down span {
+    display: flex;
+    align-items: center;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 0 auto;
+    padding-top: 4rem;
+    padding-bottom: 6rem;
+}
+
+.pagination a {
+    display: flex;
+    padding: .4rem .8rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    color: #000000;
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    border-radius: 3.5rem;
+}
+
+.prev,
+.next {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 3.5rem;
+    border: 1px solid #707070;
+    color: #707070;
+}
+
+.prev svg path,
+.next svg path {
+    fill: #707070;
+}
+
+.active,
+.active svg path {
+    fill: #000000;
+    border-color: #000;
+    text-decoration: underline;
+    text-decoration-color: #000;
+}
+
+@media (max-width: 1200px) {
+    .title-list-pages {
+        gap: 4rem;
+        padding: 16rem 4rem 0 4rem;
+    }
+
+    .news-detail-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 9rem;
+        padding: 4rem;
+    }
+    .list-pages-right {
+        width: 100%;
+        max-width: 94rem;
+        gap: 6rem;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .news-detail-title-2 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 9rem;
+        width: 100%;
+    }
+    .news-detail-main-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 3.4rem;
+    }
+    .lpr-drop-down {
+        width: 100%;
+        max-width: 45rem;
+    }
+    .lpr-item-links {
+        flex-direction: row;
+        display: flex;
+        justify-content: flex-start;
+        gap: 1rem;
+        padding: 1rem 0;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        font-size: 1.5rem;
+    }
+    .lpr-item {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media (max-width: 1024px) {
+    .tl-texts span {
+        font-size: 4.6rem;
+    }
+    .tl-texts h1 {
+        font-size: 4.6rem;
+    }
+    .tl-texts p {
+        font-size: 2.8rem;
+    }
+    .tl-link-tags p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .title-list-pages {
+        padding: 16rem 2rem 0 2rem;
+    }
+    .news-detail-section {
+        gap: 6rem;
+        padding: 4rem 2rem;
+    }
+    .tl-link-tags {
+        display: none;
+    }
+    .tl-texts span {
+        font-size: 2.8rem;
+    }
+    .tl-texts h1 {
+        font-size: 3rem;
+    }
+    .tl-texts p {
+        font-size: 2.4rem;
+        
+    }
+    .news-detail-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .news-detail-items {
+        gap: 1rem;
+    }
+
+    .news-detail-items-right h1 {
+        font-size: 1.8rem;
+    }
+
+    .news-detail-items-red a , .bg-red , .lpr-link-btn{
+        padding: .6rem 2.3rem !important;
+    }
+
+    .news-detail-items-right {
+        text-align: left;
+        font: normal normal bold 2.2rem/2.8rem Noto Sans JP;
+        letter-spacing: 0px;
+        color: #000000;
+    }
+    .lpr-item-links {
+        display: flex;
+        justify-content: flex-start;
+        gap: 1rem;
+    }
+    .lpr-item p {
+        font: normal normal bold 1.8rem/2.2rem Inter;
+        letter-spacing: 0px;
+        color: #000000;
+    }
+    .lpr-item {
+        gap: 1rem;
+    }
+}
