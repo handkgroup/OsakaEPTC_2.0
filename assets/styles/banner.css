@@ -1,13 +1,13 @@
 .banner-wrapper {
     width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    /* align-items: center; */
+    /* justify-content: space-between; */
     padding: 0 2.5rem;
     position: relative;
     overflow: visible;
     position: fixed;
-    bottom: 20px;
+    bottom: 0;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1000;
@@ -35,6 +35,8 @@
     background: #ffffff 0% 0% no-repeat padding-box;
     border: 1px solid #dbdfe0;
     border-radius: 1rem;
+    bottom: 2rem;
+    margin-bottom: 2rem;
 }
 
 .banner-wrapper .banner-wrapper-left a {
@@ -81,24 +83,48 @@
     padding: 1.4rem 0;
 }
 
-.banner-wrapper .banner-wrapper-right .mini-banner .banner-right {
+.banner-wrapper .banner-wrapper-bottom{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    gap: 2rem;
+}
+
+.banner-wrapper .banner-wrapper-bottom .card{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: #000;
+    border-radius: 1rem 1rem 0 0 ;
+    gap: 15rem;
+    height: 7rem;
+    padding:1rem 3rem;
 }
 
-.banner-wrapper .banner-wrapper-right .mini-banner .banner-right .arrow-white {
-    border: 1px solid var(--unnamed-color-ffffff);
-    border-radius: 5px;
-    padding: 0.7rem;
-    width: 3rem;
-    height: 3rem;
+.banner-wrapper .banner-wrapper-bottom .card h6{
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fff;
 }
 
-.banner-wrapper .banner-wrapper-right .mini-banner .banner-right img {
-    width: 13rem;
-    height: 13rem;
+.banner-wrapper .banner-wrapper-bottom .card h6 span{
+    font-size: 1.2rem;
+    font-weight: 900;
+    font-family: "Inter", sans-serif;
+    display: block;
+    color: #9C9C9C;
+    text-transform: uppercase;
 }
+
+.banner-wrapper .banner-wrapper-bottom .card img{
+    max-width: 1.4rem;
+    height: 1.4rem;
+}
+
+
+
 
 @media (max-width: 960px) {
     .banner-wrapper {
