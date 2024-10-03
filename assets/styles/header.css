@@ -924,6 +924,7 @@ ul {
     right: 0;           /* 右端まで広がる */
     padding:0.8rem 0;
     font-weight:bold;
+    z-index: 500;
 }
 
 @media (min-width: 1024px) {

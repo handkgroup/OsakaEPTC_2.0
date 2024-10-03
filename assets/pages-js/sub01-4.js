@@ -14,3 +14,28 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 })
+
+
+
+const scrollContainers = document.querySelectorAll('.scroll_container');
+const customScrollbarThumbs = document.querySelectorAll('.custom-scrollbar-thumb');
+
+
+function updateScrollbar(scrollContainer, customScrollbarThumb) {
+    const scrollPercentage = (scrollContainer.scrollLeft / (scrollContainer.scrollWidth - scrollContainer.clientWidth)) * 100;
+    customScrollbarThumb.style.width = `${scrollPercentage}%`;
+}
+
+scrollContainers.forEach((scrollContainer, index) => {
+    const customScrollbarThumb = customScrollbarThumbs[index];
+
+    scrollContainer.addEventListener('scroll', () => {
+        updateScrollbar(scrollContainer, customScrollbarThumb);
+    });
+
+    window.addEventListener('load', () => {
+        updateScrollbar(scrollContainer, customScrollbarThumb);
+    });
+});
+
+
