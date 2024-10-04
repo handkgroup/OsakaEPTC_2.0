@@ -83,3 +83,79 @@ function adjustLayout() {
 
 adjustLayout();
 window.addEventListener('resize', adjustLayout);
+
+
+// slider codes
+document.addEventListener('DOMContentLoaded', function() {
+    const slider = document.querySelector('.slider-cd-main-box');
+    const slides = document.querySelectorAll('.slide-cd');
+    const customScrollbar = document.querySelector('.custom-scrollbar');
+    const customThumb = document.querySelector('.custom-thumb');
+    const prevBtn = document.getElementById('prevBtn-cd');
+    const nextBtn = document.getElementById('nextBtn-cd');
+    const dotIndicators = document.querySelector('.dot-indicators');
+
+    function updateThumb() {
+        const scrollWidth = slider.scrollWidth;
+        const clientWidth = slider.clientWidth;
+        const thumbWidth = (clientWidth / scrollWidth) * customScrollbar.clientWidth;
+        customThumb.style.width = `${thumbWidth}px`;
+        const thumbLeft = (slider.scrollLeft / (scrollWidth - clientWidth)) * (customScrollbar.clientWidth - thumbWidth);
+        customThumb.style.left = `${thumbLeft}px`;
+    }
+
+    function createDots() {
+        slides.forEach((_, index) => {
+            const dot = document.createElement('div');
+            dot.classList.add('dot');
+            dot.dataset.index = index;
+            dot.addEventListener('click', () => {
+                slider.scrollLeft = index * (slides[index].offsetWidth + 32); // 32 is for the gap
+                updateActiveDot(index);
+                updateThumb(); // Update the thumb after clicking a dot
+            });
+            dotIndicators.appendChild(dot);
+        });
+        updateActiveDot(-1); // Set the first dot as active on load
+    }
+
+    function updateActiveDot(index) {
+        const dots = document.querySelectorAll('.dot');
+        dots.forEach((dot, i) => {
+            dot.classList.toggle('active', i === index+1);
+        });
+    }
+
+    const scrollAmount = 230;
+
+    function getActiveIndex() {
+        const slideWidth = slides[0].offsetWidth + 32; // 32 for the gap
+        const index = Math.floor(slider.scrollLeft / slideWidth);
+        return Math.max(0, Math.min(index, slides.length - 1)); // Ensure valid index
+    }
+
+    prevBtn.addEventListener('click', () => {
+        slider.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+        setTimeout(() => {
+            updateActiveDot(getActiveIndex());
+            updateThumb(); // Update thumb position after scrolling
+        }, 300);
+    });
+
+    nextBtn.addEventListener('click', () => {
+        slider.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+        setTimeout(() => {
+            updateActiveDot(getActiveIndex());
+            updateThumb(); // Update thumb position after scrolling
+        }, 300);
+    });
+
+    slider.addEventListener('scroll', () => {
+        updateActiveDot(getActiveIndex());
+        updateThumb(); // Update thumb position during scroll
+    });
+
+    createDots();
+    updateThumb();
+});
+
