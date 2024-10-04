@@ -160,59 +160,74 @@ nestedCloseLinks.forEach(link => {
 
 
 
-// Change color when scrolling
-// すべての .act_clr クラスを持つ要素を取得
 const links = document.querySelectorAll('.act_clr');
-// .top_navbar クラスを持つ要素を取得
 const navbar = document.querySelector('.top_navbar');
+const logo1 = document.querySelector('.navbar-logo');
+const logo2 = document.querySelector('.navbar-logo2');
 
-// 画面幅が1024px以上の時だけ動作させる
 if (window.innerWidth >= 1025) {
-// ウィンドウの縦幅を取得
-const windowHeight = window.innerHeight;
-
-window.addEventListener('scroll', function() {
-// 現在のスクロール位置を取得
-const scrollPosition = window.scrollY;
-
-// スクロール位置がウィンドウの高さ以上になったら処理を実行
-if (scrollPosition >= windowHeight) {
-// 文字色を黒に変更
-links.forEach(function(link) {
-    link.style.color = 'black';
-});
-// ナビゲーションバーの背景色を白に変更
-navbar.style.backgroundColor = 'white';
-} else {
-// 文字色を元の赤に戻す
-links.forEach(function(link) {
-    link.style.color = 'white';
-});
-// ナビゲーションバーの背景色を透明に戻す
-navbar.style.backgroundColor = 'transparent';
-}
-});
-}
-
-window.addEventListener('scroll', function() {
-    // 画面幅が1024px以上の場合のみ処理を実行
-    if (window.innerWidth >= 1025) {
-        // スクロール位置がウィンドウの高さ以上の場合のみ処理を実行
-        if (window.scrollY >= window.innerHeight) {
-            // navbar-logo と navbar-logo2 を取得
-            const logo1 = document.querySelector('.navbar-logo');
-            const logo2 = document.querySelector('.navbar-logo2');
-
-            // navbar-logo を非表示、navbar-logo2 を表示
-            logo1.style.display = 'none';
-            logo2.style.display = 'block';
-        } else {
-            // navbar-logo を表示、navbar-logo2 を非表示
-            const logo1 = document.querySelector('.navbar-logo');
-            const logo2 = document.querySelector('.navbar-logo2');
-
-            logo1.style.display = 'block';
-            logo2.style.display = 'none';
-        }
+    
+    const currentPath = window.location.pathname;
+    const windowHeight = window.innerHeight; 
+    const isMainPage = currentPath === "/" || currentPath === "/index.html";     
+    const immediateChangePages = [
+        "/pages/sub01-4.html",
+        "/pages/sub01-5.html",
+        "/contact.html",
+    ];
+  
+    const isImmediateChangePage = immediateChangePages.includes(currentPath);
+ 
+    function applyFirstHeader() {
+        links.forEach(function(link) {
+            link.style.color = 'white'; 
+        });
+        navbar.style.backgroundColor = 'transparent';  
+        logo1.style.display = 'block';  
+        logo2.style.display = 'none';   
     }
-});
+
+    
+    function applySecondHeader() {
+        links.forEach(function(link) {
+            link.style.color = 'black'; 
+        });
+        navbar.style.backgroundColor = 'white'; 
+        logo1.style.display = 'none';   
+        logo2.style.display = 'block';  
+    }
+ 
+    function applyThirdHeader() {
+        links.forEach(function(link) {
+            link.style.color = 'black';  
+        });
+        navbar.style.backgroundColor = 'white';  
+        logo1.style.display = 'none';   
+        logo2.style.display = 'block';  
+    }
+ 
+    if (isImmediateChangePage) {
+        applyThirdHeader();
+    } else {
+    
+        window.addEventListener('scroll', function() {
+            const scrollPosition = window.scrollY;
+
+            if (isMainPage) {
+                 
+                if (scrollPosition >= windowHeight) {
+                    applySecondHeader();
+                } else {
+                    applyFirstHeader();
+                }
+            } else {
+                 
+                if (scrollPosition > 0) {
+                    applySecondHeader();
+                } else {
+                    applyFirstHeader();
+                }
+            }
+        });
+    }
+}
