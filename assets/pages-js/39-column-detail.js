@@ -24,14 +24,14 @@ document.addEventListener('DOMContentLoaded', function () {
     function updateLinksDisplay() {
         if (window.innerWidth < 1200) {
             links.forEach(link => {
-                link.style.display = 'block';
+                link.style.display = 'flex';
             });
             showMoreBtn.style.display = 'none';
         } else {
             links.forEach((link, index) => {
-                link.style.display = index < 5 ? 'block' : 'none';
+                link.style.display = index < 5 ? 'flex' : 'none';
             });
-            showMoreBtn.style.display = 'block';
+            showMoreBtn.style.display = 'flex';
         }
     }
 
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     showMoreBtn.addEventListener('click', function () {
         links.forEach(link => {
-            link.style.display = 'block';
+            link.style.display = 'flex';
         });
         this.style.display = 'none';
     });
@@ -51,7 +51,8 @@ document.addEventListener('DOMContentLoaded', function () {
 // anchor list ul li 
 
 function autoNumberSections() {
-    const sections = document.querySelectorAll("ul");
+    const sections = document.querySelectorAll(".anchor-list-content ul");
+    
     sections.forEach((section, sectionIndex) => {
         const items = section.querySelectorAll("li");
         items.forEach((item, itemIndex) => {
@@ -64,4 +65,21 @@ function autoNumberSections() {
         });
     });
 }
+
 window.onload = autoNumberSections;
+
+
+
+// media for when spitial time 
+function adjustLayout() {
+    const leftMain = document.querySelector('.it-left-main');
+
+    if (leftMain.offsetWidth < 688) {
+        document.body.classList.add('mobile-layout');
+    } else {
+        document.body.classList.remove('mobile-layout');
+    }
+}
+
+adjustLayout();
+window.addEventListener('resize', adjustLayout);

@@ -21,6 +21,9 @@
     padding: 20rem 16rem 4rem 16rem;
     margin: 0 auto;
 }
+.title-2-news {
+    display: none !important;
+}
 
 .tl-texts {
     display: flex;
@@ -390,6 +393,14 @@
 }
 
 @media (max-width: 768px) {
+    .title-2-news {
+        display: flex !important;
+    }
+
+    .title-1-news {
+        display: none;
+    }
+
     .lpr-item-links {
         width: calc(100% + 2rem);
         padding-right: 2rem ;

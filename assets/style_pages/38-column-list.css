@@ -31,6 +31,10 @@
     gap: 1rem;
 }
 
+.title-2-column {
+    display: none !important;
+}
+
 .tl-texts span {
     font-size: 5.4rem;
     width: 6rem;
@@ -522,6 +526,14 @@
 }
 
 @media (max-width: 768px) {
+
+
+    .title-2-column {
+        display: flex !important;
+    }
+    .title-1-column {
+        display: none !important;
+    }
     .column-list-main-content {
         gap: 2rem;
         padding-top: 1rem;

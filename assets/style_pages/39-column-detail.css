@@ -22,6 +22,10 @@
     margin: 0 auto;
 }
 
+.title-2-column {
+    display: none !important;
+}
+
 .tl-texts {
     display: flex;
     flex-direction: column;
@@ -33,6 +37,11 @@
 
 .tl-texts span {
     font-size: 5.4rem;
+    width: 6rem;
+    height: 6rem;
+}
+
+.tl-texts span img {
     width: 6rem;
     height: 6rem;
 }
@@ -387,7 +396,7 @@
     gap: 2rem;
 }
 
-.panel-links-3column h1 {
+.head-title-sections-cd {
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -468,26 +477,29 @@
     color: #000000;
 }
 
+/* media > 768px */
+
+.mobile-layout .pl3c-items-box,
+.mobile-layout .pl2c-items-box {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3rem;
+}
+
+.mobile-layout .img-top-pl3c {
+    width: 100%;
+}
+
+.mobile-layout .item-pl3c .img-top-pl3c img {
+    width: 100%;
+    max-height: 33rem;
+}
+
 .panel-links-2column {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     gap: 2rem;
-}
-
-.panel-links-2column h1 {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: .5rem;
-    text-align: left;
-    font-size: 2.2rem;
-    font-family: "Noto Sans JP";
-    font-weight: 700;
-    letter-spacing: 0px;
-    color: #000000;
-    width: 100%;
 }
 
 .pl2c-items-box {
@@ -542,27 +554,17 @@
     justify-content: flex-start;
     align-items: flex-start;
     gap: 2rem;
-}
-
-.wb-texts-main h1 {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: .5rem;
-    text-align: left;
-    font-size: 2.2rem;
-    font-family: "Noto Sans JP";
-    font-weight: 700;
-    letter-spacing: 0px;
-    color: #000000;
     width: 100%;
 }
 
 .wb-texts-box {
+    width: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+    flex-direction: column;
     padding: 4rem;
+    gap: 2rem;
     background: #F2F2F5 0% 0% no-repeat padding-box;
     border-radius: 10px;
 }
@@ -576,26 +578,53 @@
     color: #000000;
 }
 
+.wb-texts-box ul {
+    list-style-type: none;
+}
+
+.wb-texts-box ul li {
+    display: flex;
+    text-align: left;
+    font-size: 1.8rem;
+    font-weight: normal;
+    font-family: "Noto Sans JP";
+    letter-spacing: 0px;
+    color: #6E6E73;
+    position: relative;
+    padding-left: 2rem; 
+}
+
+.wb-texts-box li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 8px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.wb-texts-box h1 {
+    text-align: left;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: "Noto Sans JP";
+    letter-spacing: 0px;
+    color: #000000;
+}
+
+.br-20px {
+    border-radius: 20px;
+}
+
 .wb-texts-img-main {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     gap: 2rem;
-}
-
-.wb-texts-img-main h1 {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: .5rem;
-    text-align: left;
-    font-size: 2.2rem;
-    font-family: "Noto Sans JP";
-    font-weight: 700;
-    letter-spacing: 0px;
-    color: #000000;
-    width: 100%;
 }
 
 .wb-texts-img-box {
@@ -686,20 +715,6 @@
     width: 100%;
 }
 
-.anchor-list-main h1 {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: .5rem;
-    text-align: left;
-    font-size: 2.2rem;
-    font-family: "Noto Sans JP";
-    font-weight: 700;
-    letter-spacing: 0px;
-    color: #000000;
-    width: 100%;
-}
-
 .anchor-list-content {
     display: flex;
     align-items: flex-start;
@@ -712,6 +727,7 @@
 }
 
 .anchor-list-content h1 {
+    display: flex;
     border-radius: 10px 10px 0px 0px;
     background: #000000 0% 0% no-repeat padding-box;
     text-align: left;
@@ -787,21 +803,7 @@
     width: 100%;
 }
 
-.small-table-main h1 {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: .5rem;
-    text-align: left;
-    font-size: 2.2rem;
-    font-family: "Noto Sans JP";
-    font-weight: 700;
-    letter-spacing: 0px;
-    color: #000000;
-    width: 100%;
-}
-
-.st-texts-box {
+.small-table-content-cs {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -811,19 +813,19 @@
     overflow: hidden;
 }
 
-.st-texts-box table {
+.small-table-content-cs table {
     width: 100%;
     border-collapse: collapse;
     margin: 0;
     padding: 0;
 }
 
-.st-texts-box td {
+.small-table-content-cs td {
     padding: 2.1rem 1.5rem;
     text-align: left;
 }
 
-.st-texts-box .title {
+.small-table-content-cs .title-cd {
     font-size: 1.6rem;
     font-family: "Noto Sans JP";
     letter-spacing: 0px;
@@ -832,9 +834,10 @@
     font-weight: bold;
     text-align: center;
     width: 30%;
+    min-width: max-content;
 }
 
-.st-texts-box .content {
+.small-table-content-cs .content-cd {
     text-align: left;
     font-size: 1.6rem;
     font-weight: normal;
@@ -846,11 +849,379 @@
     padding-left: 3rem;
 }
 
-.st-texts-box tr:not(:last-child) td {
+.small-table-content-cs tr:not(:last-child) td {
     border-bottom: 1px solid #ddd;
 }
 
-/*  */
+.big-table-content-cd {
+    display: block;
+    width: 100%;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f5f5f5;
+    padding-bottom: 2rem;
+}
+
+.big-table-content-cd::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+.big-table-content-cd::-webkit-scrollbar-track {
+    background: #f5f5f5;
+    border-radius: 10px;
+}
+
+.big-table-content-cd::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.big-table-content-cd::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.big-table-content-cd table {
+    width: 100%;
+    /* min-width: 768px; */
+    border-collapse: collapse;
+    border-radius: 10px 10px 0 10px;
+    table-layout: auto;
+}
+
+.big-table-content-cd th,
+.big-table-content-cd td {
+    padding: 2.2rem 1.2rem;
+    text-align: center;
+    border: 1px solid #cccccc;
+    white-space: nowrap;
+}
+
+.big-table-content-cd th {
+    font-size: 1.6rem;
+    font-family: "Noto Sans JP";
+    letter-spacing: 0px;
+    background: #ABABAB;
+    color: white;
+    font-weight: bold;
+}
+
+.big-table-content-cd td {
+    font-size: 1.6rem;
+    font-family: "Noto Sans JP";
+    letter-spacing: 0px;
+    color: #000;
+    font-weight: normal;
+    background-color: #f0f0f0;
+}
+
+.big-table-content-cd .cd-bt-header th {
+    background: #6E6E73;
+}
+
+.big-table-content-cd table {
+    border-spacing: 0;
+}
+
+@media (max-width:768px) {
+    .small-table-content-cs table tr {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        text-align: left;
+    }
+    .small-table-content-cs table tr .title-cd {
+        text-align: left;
+        width: 100%;
+    }
+    .big-table-content-cd {
+        width: calc(2rem + 100% + 2rem);
+        align-items: center;
+        justify-content: center;
+        padding: 0 2rem 2rem 2rem;
+        margin-left: -2rem;
+        margin-right: -2rem;
+    }
+}
+
+.link-buttons-cd-main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 2rem;
+}
+
+.link-buttons-cd-items {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.link-botton-item-cd {
+    display: flex;
+    border: 1px solid #000000;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5rem 3rem;
+    border-radius: 90px;
+    font-size: 1.8rem;
+    font-family: "Noto Sans JP";
+    letter-spacing: 0px;
+    color: #000;
+    width: 100%;
+    max-width: 36rem;
+    margin: 0 auto;
+    gap: 2rem;
+}
+
+.imgae-column1-cd {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+}
+
+.ic1-content-cd {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+}
+
+.ic1-content-cd-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.imgae-column2-cd {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+}
+
+.ic2-content-cd {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+}
+
+.ic2-content-cd-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.it-right-main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+}
+
+.it-right-content {
+    display: flex;
+    width: 100%;
+    gap: 3rem;
+}
+
+.it-right-img {
+    width: 48%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.it-right-texts-box {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.it-right-texts-box h1 {
+    font-size: 2.2rem;
+    font-family: "Noto Sans JP";
+    letter-spacing: 0px;
+    color: #000;
+    font-weight: bold;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #D7D2CF;
+}
+
+.it-right-texts-box p {
+    font-size: 1.5rem;
+    font-family: "Noto Sans JP";
+    letter-spacing: 0px;
+    color: #000;
+    font-weight: normal;
+}
+
+.it-left-main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+}
+
+.it-left-content {
+    display: flex;
+    width: 100%;
+    gap: 3rem;
+}
+
+.it-left-img {
+    width: 48%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.it-left-texts-box {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.it-left-texts-box h1 {
+    font-size: 2.2rem;
+    font-family: "Noto Sans JP";
+    letter-spacing: 0px;
+    color: #000;
+    font-weight: bold;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #D7D2CF;
+}
+
+.it-left-texts-box p {
+    font-size: 1.5rem;
+    font-family: "Noto Sans JP";
+    letter-spacing: 0px;
+    color: #000;
+    font-weight: normal;
+}
+
+/* media > 768px  */
+
+.mobile-layout .it-right-content {
+    flex-direction: column;
+}
+
+.mobile-layout .it-left-content {
+    flex-direction: column-reverse;
+}
+
+.mobile-layout .it-left-texts-box,
+.mobile-layout .it-left-img,
+.mobile-layout .it-right-texts-box,
+.mobile-layout .it-right-img {
+    width: 100%;
+}
+
+@media (max-width:768px) {
+    .it-right-content {
+        flex-direction: column;
+    }
+    .it-left-content {
+        flex-direction: column-reverse;
+    }
+    .it-left-texts-box,
+    .it-left-img,
+    .it-right-texts-box,
+    .it-right-img {
+        width: 100%;
+    }
+}
+
+.headline-tp-cd-main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.htp-cd-texts-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.htp-cd-texts-box h1 {
+    font-size: 2.2rem;
+    font-family: "Noto Sans JP";
+    letter-spacing: 0px;
+    color: #000;
+    font-weight: bold;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #D7D2CF;
+}
+
+.htp-cd-texts-box p {
+    font-size: 1.5rem;
+    font-family: "Noto Sans JP";
+    letter-spacing: 0px;
+    color: #000;
+    font-weight: normal;
+}
+
+
+
+
+
+
+
+.cards-column2-cd {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+}
+
+.cc2-content-cd{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+}
+
+.cc2-content-cd-card-1 {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+    height: 30rem;
+
+    background: transparent linear-gradient(128deg, #36E6F7 0%, #706ED2 42%, #F52ACD 100%) 0% 0% no-repeat padding-box;
+}
+
+.cc2-content-cd-card-2 {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+    height: 30rem;
+    background: transparent linear-gradient(128deg, var(--unnamed-color-fdfd30) 0%, #D93C65 100%) 0% 0% no-repeat padding-box;
+
+}
+
+
+/*  ############################################ */
 
 .column-detail-title-2 {
     display: flex;
@@ -1083,6 +1454,10 @@
 }
 
 @media (max-width: 1024px) {
+    .tl-texts span img {
+        width: 4.6rem;
+        height: 4.6rem;
+    }
     .tl-texts span {
         font-size: 4.6rem;
     }
@@ -1098,6 +1473,16 @@
 }
 
 @media (max-width: 768px) {
+    .title-2-column {
+        display: flex !important;
+    }
+    .title-1-column {
+        display: none !important;
+    }
+    .tl-texts span img {
+        width: 3rem;
+        height: 3rem;
+    }
     .img-top-pl3c {
         width: 100%;
     }
